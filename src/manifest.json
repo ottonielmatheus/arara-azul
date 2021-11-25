@@ -1,0 +1,20 @@
+{
+    "manifest_version": 2,
+    "version": "0.0.1",
+    "name": "Arara Azul",
+    "description": "Chrome extension to speed up your language learning.",
+    "author": "Ottoniel Matheus",
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["background.js"],
+            "run_at": "document_idle"
+        }
+    ],
+    "browser_action": {
+        "default_icon": "favicon.png",
+        "default_popup": "index.html"
+    },
+    "web_accessible_resources": ["popup.css"],
+    "permissions": []
+}

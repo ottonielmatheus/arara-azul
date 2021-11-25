@@ -1,0 +1,23 @@
+{
+  "name": "arara-azul",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx webpack --watch --config webpack.dev.js",
+    "build": "npx webpack --config webpack.prod.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "clean-webpack-plugin": "^4.0.0",
+    "copy-webpack-plugin": "^10.0.0",
+    "html-webpack-plugin": "^5.5.0",
+    "webpack": "^5.64.3",
+    "webpack-cli": "^4.9.1"
+  },
+  "dependencies": {
+    "tippy.js": "^6.3.7",
+    "uuid": "^8.3.2"
+  }
+}
